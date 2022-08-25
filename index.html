@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/asset.css" />
+    <link rel="icon" href="./Images/logo/Logo-main.png" />
+    <link rel="stylesheet" href="./css/basic.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <title>Card World</title>
+  </head>
+  <body>
+    <a href="#" class="go"><i class="fa-solid fa-arrow-up"></i></a>
+    <header>
+      <nav class="nav__bar flex">
+        <div class="menu__logo flex">
+          <a href="index.html">
+            <img src="./Images/logo/Logo-main1.png" alt="" />
+          </a>
+        </div>
+        <ul class="menu flex dot-remove">
+          <li class="item">
+            <a href="index.html">
+              <span>trang chủ</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="gioithieu.html">
+              <span>giới thiệu</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="tintuc.html">
+              <span>tin tức</span>
+            </a>
+          </li>
+          <li class="item products">
+            <a class="" href="sanpham.html">
+              <span>sản phẩm</span>
+            </a>
+            <i class="fa-solid fa-angle-down icon-list"></i>
+            <ul class="sub__menu dot-remove">
+              <li class="item"><a href="sanpham.html"><span>Chevrolet</span></a></li>
+              <li class="item"><a href="sanpham2.html"><span>Mercedes</span></a></li>
+              <li class="item"><a href="sanpham3.html"><span>Bmw</span></a></li>
+              <li class="item"><a href="sanpham4.html"><span>Porsche</span></a></li>
+            </ul>
+          </li>
+          <li class="item">
+            <a href="lienhe.html">
+              <span>liên hệ</span>
+            </a>
+          </li>
+        </ul>
+        <div class="find__icon flex">
+          <input id="find" type="text" placeholder="Tìm kiếm." />
+          <label for="find">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </label>
+        </div>
+        <div class="nav-responsive">
+          <i class="fa-solid fa-xmark close-btn"></i>
+          <i class="fa-solid fa-bars list-btn"></i>
+        </div>
+      </nav>
+    </header>
+    <section class="container">
+      <section class="slide__show">
+        <!-- <i class="fa-solid fa-angle-right arrow-right"></i>
+        <i class="fa-solid fa-angle-left arrow-left"></i> -->
+        <div class="slides autoplay">
+          <div class="slide">
+            <img src="./Images/slider/1.png" alt="" />
+            <div class="slides__title flex">
+              <p>chevrolet Camaro ZL1 1LE</p>
+              <p>3 tỷ VNĐ</p>
+            </div>
+            <!-- <a class="slide__buy-btn" href=""> Liên Hệ Ngay </a> -->
+          </div>
+          <div class="slide first">
+            <div class="slides__title">
+              <p>BMW M3 2002</p>
+              <p>550 triệu VNĐ</p>
+            </div>
+            <img src="./Images/slider/2.png" alt="" />
+            <!-- <a class="slide__buy-btn" href=""> Liên Hệ Ngay </a> -->
+          </div>
+          <div class="slide">
+            <div class="slides__title">
+              <p>mercedes AMG-GT</p>
+              <p>11,590 tỷ VNĐ</p>
+            </div>
+            <img src="./Images/slider/3.png" alt="" />
+            <!-- <a class="slide__buy-btn" href=""> Liên Hệ Ngay </a> -->
+          </div>
+          <div class="slide">
+            <div class="slides__title">
+              <p>Porsche turbo S</p>
+              <p>15,3 tỷ VNĐ</p>
+            </div>
+            <img src="./Images/slider/4.png" alt="" />
+            <!-- <a class="slide__buy-btn" href=""> Liên Hệ Ngay </a> -->
+          </div>
+          <div class="slide">
+            <div class="slides__title">
+              <p>Mercedes Benz CL</p>
+              <p>1,7 tỷ VNĐ</p>
+            </div>
+            <img src="./Images/slider/5.png" alt="" />
+            <!-- <a class="slide__buy-btn" href=""> Liên Hệ Ngay </a> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="introduction flex">
+        <section class="about">
+          <section class="title-field">
+            <p>CAR WORLD</p>
+          </section>
+          <p class="introduce scroll__bot-to-top">Showroom mua bán ô tô CarWorld ra đời với sứ mệnh là cầu nối giữa người mua và người bán ô tô cũ/mới trên toàn quốc. Chưa bao giờ, việc mua bán ôtô trở nên đơn giản hơn bao giờ hết đối với khách hàng Việt với chỉ vài cú click chuột vô cùng tiện lợi và nhanh chóng. Đặc biệt, khách hàng mua xe ô tô có thể tham khảo nhiều dòng xe tại sàn mua bán ô tô CarWorld, so sánh mẫu mã và giá xe oto các loại, từ đó dễ dàng đưa ra những quyết định mua xe ô tô hợp lý nhất. Ngoài ra, khách hàng cũng có thể liên hệ trực tiếp với người đăng bán xe hơi để được tư vấn rõ nhất về những mẫu xe mà mình đang quan tâm.</p>
+        </section>
+      </section>
+      <section class="reason__choose">
+        <section class="title-field">
+          <p>TẠI SAO CHỌN CAR WORLD</p>
+        </section>
+        <section class="reason__item flex scroll__bot-to-top">
+          <div class="box">
+            <div class="icon__box">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <h3>Tư vấn tận tâm</h3>
+            <p>Kinh nghiệm 5 năm ngành ô tô, chúng tôi tư tin giúp quý khách chọn được xe ưng ý.</p>
+          </div>
+          <div class="box">
+            <div class="icon__box">
+              <i class="fa-solid fa-folder-plus"></i>
+            </div>
+            <h3>Bảo hành - Cứu hộ</h3>
+            <p>Kỹ thuật viên tận tình cứu hộ mọi lúc mọi nơi khi xe gặp sự cố trong 3 năm.</p>
+          </div>
+          <div class="box">
+            <div class="icon__box">
+              <i class="fa-solid fa-coins"></i>
+            </div>
+            <h3>Giá tốt - Nhiều quà</h3>
+            <p>CarWorld cam kết luôn có giá tốt nhất.</p>
+          </div>
+          <div class="box">
+            <div class="icon__box">
+              <i class="fa-solid fa-car-side"></i>
+            </div>
+            <h3>Hậu thuẫn từ CarWorld</h3>
+            <p>Chúng tôi tự hào là đại lý lớn nhất miền Nam.</p>
+          </div>
+        </section>
+      </section>
+      <section class="car__brand__box flex">
+        <section class="title-field">
+          <p>CÁC HÃNG XE</p>
+        </section>
+        <section class="logo__brands-root">
+          <section class="logo__brands flex scroll__right-to-left">
+            <div class="item chevrolet">
+              <a href="sanpham.html" class="flex">
+                <div>
+                  <img src="./Images/logo brand/chevrolet-logo-v2.webp" alt="">
+                </div>
+                <p>CHEVROLET</p>
+              </a>
+            </div>
+            <div class="item">
+              <a href="sanpham2.html" class="flex">
+                <div>
+                  <img src="./Images/logo brand/mercedes.png" alt="">
+                </div>
+                <p>MERCEDES</p>
+              </a>
+            </div>
+            <div class="item">
+              <a href="sanpham3.html" class="flex">
+                <div>
+                  <img src="./Images/logo brand/bmw.png" alt="">
+                </div>
+                <p>BMW</p>
+              </a>
+            </div>
+            <div class="item">
+              <a href="sanpham4.html" class="flex">
+                <div>
+                  <img src="./Images/logo brand/porche.png" alt="">
+                </div>
+                <p>PORSCHE</p>
+              </a>
+            </div>
+          </section>
+        </section>
+      </section>
+      <section class="service">
+        <section class="title-field">
+          <p>DỊCH VỤ</p>
+        </section>
+        <section class="service__box flex scroll__bot-to-top">
+          <div class="service__item box">
+            <div class="icon__box"><i class="fa-solid fa-dollar-sign"></i></div>
+            <h3>Mua xe</h3>
+            <p>Dễ dàng tìm kiếm xe đang bán thông qua danh mục xe mới và xe cũ lớn nhất Việt Nam</p>
+          </div>
+          <div class="service__item box">
+            <div class="icon__box"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+            <h3>Bán xe</h3>
+            <p>Bạn có thể bán xe dễ dàng cùng công cụ đăng tin bán xe hoặc qua đội ngũ hỗ trợ nhanh chóng và tin cậy</p>
+          </div>
+          <div class="service__item box">
+            <div class="icon__box"><i class="fa-solid fa-sack-dollar"></i></div>
+            <h3>Vay mua xe</h3>
+            <p>Cung cấp cho bạn kênh tài chính mua xe đa dạng, đơn giản và hữu hiệu, hỗ trợ thủ tục nhanh chóng</p>
+          </div>
+          <div class="service__item box">
+            <div class="icon__box"><i class="fa-solid fa-magnifying-glass-dollar"></i></div>
+            <h3>Định giá xe</h3>
+            <p>Bạn có thể tiếp cận công cụ định giá xe hàng đầu và hoàn toàn miễn phí</p>
+          </div>
+          <div class="service__item box">
+            <div class="icon__box"><i class="fa-solid fa-newspaper"></i></div>
+            <h3>Tin tức</h3>
+            <p>Cập nhật tin tức mới nhất, đánh giá và tư vấn với lời khuyên từ các chuyên gia nhiều kinh nghiệm</p>
+          </div>
+        </section>
+      </section>
+      <section class="sub__event">
+        <section class="title-field">
+          <p>TIN TỨC</p>
+        </section>
+        <section class="news__box flex scroll__bot-to-top">
+          <section class="main_news">
+            <a class="news__item" href="tintuc.html">
+              <div class="img">
+                <img src="./Images/news/khuyenmai/6.png" alt="">
+              </div>
+              <h4>CHEER UP VIETNAM: ƯU ĐÃI NHÂN HAI – TIẾP SỨC ĐƯỜNG DÀI CÙNG ISUZU QKR</h4>
+            </a>
+          </section>
+          <section class="sub_news flex">
+            <a class="news__item" href="tintuc.html">
+              <div class="img">
+                <img src="./Images/news/khuyenmai/3.jpg" alt="">
+              </div>
+              <h5>CHƯƠNG TRÌNH “ĐẶT XE TRƯỚC-RƯỚC QUÀ NGAY” ÁP DỤNG CHO DÒNG XE BÁN TẢI ISUZU D-MAX EURO 5</h5>
+            </a>
+            <a class="news__item" href="tintuc.html">
+              <div class="img">
+                <img src="./Images/news/khuyenmai/4.jpg" alt="">
+              </div>
+              <h5>HỆ THỐNG ĐẠI LÝ ISUZU VIỆT NAM DÀNH ƯU ĐÃI LỚN CHO KHÁCH HÀNG MUA SUV MU-X TƯNG BỪNG ĐÓN HÈ 2022</h5>
+            </a>
+            <a class="news__item" href="tintuc.html">
+              <div class="img">
+                <img src="./Images/news/khuyenmai/7.jpg" alt="">
+              </div>
+              <h5>HỆ THỐNG ĐẠI LÝ ISUZU VIỆT NAM DÀNH ƯU ĐÃI LỚN CHO KHÁCH HÀNG MUA SUV MU-X TƯNG BỪNG ĐÓN HÈ 2022</h5>
+            </a>
+            <a class="news__item" href="tintuc.html">
+              <div class="img">
+                <img src="./Images/news/khuyenmai/5.jpg" alt="">
+              </div>
+              <h5>CHƯƠNG TRÌNH “QUÀ TẶNG TRAO TAY, ĐẶT NGAY MU-X” ÁP DỤNG CHO DÒNG XE ISUZU ALL NEW MU-X</h5>
+            </a>
+          </section>
+        </section>
+        <section class="news__detail flex">
+          <a href="tintuc.html">Xem thêm</a>
+        </section>
+      </section>
+    </section>
+
+    <footer class="flex">
+      <section class="footer__menu flex">
+        <div class="my__info">
+          <div>
+            <h3>Liên Hệ</h3>
+          </div>
+          <ul class="menu dot-remove">
+            <li class="item">
+              <i class="fa-solid fa-location-dot"></i>
+              371 Nguyễn Kiệm, Gò Vấp, TP. Hồ Chí Minh
+            </li>
+            <li class="item">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:1900 0088 8800"> 1900 0088 8800 </a>
+            </li>
+            <li class="item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:carWorld@gmail.com"> carWorld@gmail.com </a>
+            </li>
+          </ul>
+        </div>
+        <div class="policy">
+          <h3>Chính sách</h3>
+          <ul class="menu dot-remove">
+            <li class="item"><a href=""> Chính sách và quy định chung</a></li>
+            <li class="item">
+              <a href=""> Chính sách giao nhận vân chuyển</a>
+            </li>
+            <li class="item"><a href=""> Chính sách bảo mật thông tin</a></li>
+          </ul>
+        </div>
+        <div class="register">
+          <h3>Đăng ký</h3>
+          <p>Đăng kí để nhận được thông tin mới nhất từ chúng tôi</p>
+          <label class="register-input">
+            <input type="email" placeholder="Nhập email của bạn." />
+            <i class="fa-solid fa-paper-plane"></i>
+          </label>
+          <ul class="menu dot-remove social flex">
+            <li class="item">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li class="item">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li class="item">
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li class="item">
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </li>
+            <li class="item">
+              <a href="#"><i class="fa-brands fa-skype"></i></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="copyright flex">
+        <span>371 Nguyễn Kiệm, Gò Vấp, TP. Hồ Chí Minh</span>
+        <h5><a href="">&copy; Carworld 2022</a></h5>
+      </section>
+    </footer>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"
+      integrity="sha512-QDsjSX1mStBIAnNXx31dyvw4wVdHjonOwrkaIhpiIlzqGUCdsI62MwQtHpJF+Npy2SmSlGSROoNWQCOFpqbsOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

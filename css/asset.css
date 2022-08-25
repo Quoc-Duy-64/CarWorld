@@ -1,0 +1,786 @@
+
+header {
+    background-color: #212121;
+    z-index: 11;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: .25s;
+}
+.bx-sd {
+    box-shadow: 0 0 20px 4px #222;
+}
+
+.nav-responsive {
+    cursor: pointer;
+    display: none;
+}
+
+.nav-responsive i{
+    color: #fff;
+    font-size: 2rem;
+}
+
+nav {
+    padding: 0 60px;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--nav-height);
+}
+
+nav .menu__logo {
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+
+nav .menu__logo img{
+    width: 100%;
+}
+
+nav .menu li {
+    position: relative;
+    text-align: center;
+}
+
+nav .menu li i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-48%);
+    color: #fff;
+    transition: .25s;
+}
+
+nav .menu li .icon{
+    left: -12%;
+}
+
+nav .menu li .icon-list{
+    right: -2%;
+}
+
+nav .menu .item a{
+    display: block;
+    min-width: 120px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 50px 0px;
+    transition: .25s;
+}
+
+nav .menu .item a span {
+    position: relative;
+}
+
+nav .menu .item a span::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background: var(--main-color);
+    left: 0;
+    top: 126%;
+    border-radius: 20px;
+    transition: .25s;
+}
+
+nav .menu > .item > a:hover {
+    color: var(--main-color);
+}
+
+nav .menu .item a:hover span::after {
+    width: 100%;
+}
+
+nav .menu li a:hover ~i {
+    color: var(--main-color);
+}
+
+nav .find__icon {
+    align-items: center;
+}
+
+nav .find__icon input {
+    outline: none;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    width: 200px;
+}
+
+nav .find__icon i {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 6px;
+}
+
+.products {
+    position: relative;
+}
+
+.sub__menu {
+    background-color: #212121;
+    position: absolute;
+    top: 88%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    transition: all .25s;
+    transform-origin: 10% top;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.sub__menu li a:hover {
+    color: var(--main-color);
+}
+
+.sub__menu a {
+    padding: 20px 30px !important;
+}
+
+.products:hover .sub__menu {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.slide__show {
+    padding-top: -10px;
+}
+
+.slides img {
+    width: 100%;
+}
+
+.slide {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.slides__title {
+    position: absolute;
+    top: 25%;
+    left: 60px;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    flex-direction: column;
+}
+
+.slides__title p {
+    width: 100%;
+    height: 50%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.slides__title p:first-child::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 60%;
+    background-color: #fff;
+    height: 2px;
+}
+
+.slides__title p:first-child {
+    padding-bottom: 20px;
+}
+
+.slides__title p:last-child {
+    padding-top: 20px;
+}
+
+
+/* SLICK */
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background-color: transparent;
+    color: var(--main-color);
+    font-size: 2.6rem;
+    border: none;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: .2s;
+}
+
+.slick-arrow:hover {
+    opacity: 1;
+}
+
+.slick-prev {
+    left: 20px;
+}
+
+.slick-next {
+    right: 20px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.slick-dots button {
+    border-radius: 50%;
+    background-color: rgb(177, 175, 175);
+    margin: 0 10px;
+    width: 10px; height: 10px;
+    font-size: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.slick-dots .slick-active button{
+    background-color: var(--main-color);
+}
+
+a.go{
+    display:block;
+    padding: 15px 25px;
+    background-color: #000000; ;
+    opacity: 0.5;
+    text-align: center;
+    color: white;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+    z-index: 100;
+}
+
+.introduction {
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 60px;
+    overflow: hidden;
+}
+
+.about .introduce{
+    text-align: center;
+    padding: 16px;
+}
+
+.reason__choose {
+    padding: 0 60px;
+    margin-top: 40px;
+    background-color: transparent;
+    background-image: url('../Images/trangChu/5.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.reason__choose .title-field{
+    padding: 40px 0 60px; 
+}
+
+.reason__choose h2 {
+    padding: 80px 0 50px;
+}
+
+.reason__item {
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+.icon__box {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+.icon__box i{
+    color: var(--main-color);
+    font-size: 2rem;
+    line-height: 100px;
+}
+
+.reason__item > div {
+    text-align: center;
+    width: 18%;
+}
+
+.box h3 {
+    padding: 10px 0;
+}
+
+.car__brand__box {
+    padding: 0 60px;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+
+.logo__brands-root {
+    overflow: hidden;
+    width: 60%;
+}
+
+.logo__brands {
+    border: 1px solid rgb(199, 194, 194);
+}
+
+
+.logo__brands .item {
+    width: 100%;
+    text-align: center;
+    border-right: 1px solid rgb(199, 194, 194);
+}
+
+.logo__brands a {
+    display: block;
+    height: 100%;
+    position: relative;
+    padding: 20px 10px 40px;
+    color: #000;
+    transition: .2s;
+}
+
+.logo__brands a:hover {
+    background-color: rgb(246, 246, 246)
+}
+
+.logo__brands .item:last-child {
+    border: none;
+}
+
+.logo__brands .item p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+
+.logo__brands .item img{
+    width: 30%;
+}
+
+.logo__brands .item.chevrolet img{
+    width: 50%;
+}
+
+.car__brand__box .title-field {
+    width: 30%;
+}
+
+.title-field {
+    width: 100%;
+}
+
+.title-field p {
+    position: relative;
+    font-size: 2rem;
+    padding-left: 8px;
+}
+
+.title-field p::after {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 90%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--main-color);
+
+}
+
+.service {
+    padding: 40px 60px 80px;
+    background-color: rgb(240, 240, 240);
+}
+
+.service .service__box {
+    padding-top: 40px;
+}
+
+.service__item{
+    width: 20%;
+    margin: 0 10px;
+    text-align: center;
+    background-color: #fff;
+    padding: 30px 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 24px 1px rgb(206, 204, 204);
+}
+
+.service__box .icon__box {
+    background-color: #f5d5d5;
+}
+
+.sub__event {
+    padding: 40px 60px 80px;
+}
+
+.news__box {
+    margin-top: 40px;
+}
+
+.news__box section {
+    width: 50%;
+}
+
+.main_news .news__item {
+    color: #444;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.main_news .news__item h4{
+    padding-top: 12px;
+}
+
+.main_news img{
+    width: 100%;
+}
+
+.sub_news {
+    flex-wrap: wrap;
+}
+
+.sub_news .news__item {
+    display: block;
+    width: 46%;
+    text-decoration: none;
+    color: #444;
+    margin-left: 20px;
+    transition: .25s;
+}
+
+.news__item:hover {
+    color: var(--main-color);
+}
+
+.sub_news .news__item h5 {
+    padding-top: 12px;
+    margin-bottom: 26px;
+}
+
+.sub_news img {
+    width: 100%;
+}
+
+.news__detail {
+    margin-right: auto;
+    justify-content: flex-end;
+}
+
+.news__detail a {
+    text-decoration: none;
+    color: #444;
+    transition: .2s;
+}
+
+.news__detail a:hover {
+    color: var(--main-color);
+}
+
+/* scroll */
+
+
+
+footer {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 60px;
+    background-image: url(../Images/footer/bkg_footer.jpg);
+    background-position: 50% 50%;
+    color: #fff;
+    padding-bottom: 36px;
+    flex-direction: column;
+}
+
+footer h3 {
+    padding: 42px 0 22px;
+    text-transform: capitalize;
+}
+
+footer ul li {
+    margin: 10px 0;
+}
+
+footer .my__info {
+    flex: 1;
+}
+
+footer ul li{
+    color: #999;
+    margin-bottom: 20px;
+}
+
+footer ul a:hover {
+    color: var(--main-color);
+}
+
+footer .my__info li i{
+    padding-right: 8px;
+}
+
+footer .policy {
+    margin-left: 30px;
+    flex: 1;
+}
+
+footer .register {
+    flex: 1;
+}
+
+footer .register p {
+    color: #999;
+    margin-top: 10px;
+}
+
+footer label {
+    position: relative;
+}
+
+footer input {
+    margin-top: 20px;
+    padding: 16px 12px;
+    width: 340px;
+    outline: none;
+    border: none;
+}
+
+footer .register label i {
+    position: absolute;
+    color: var(--main-color);
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 17px 8px;
+}
+
+footer img {
+    width: 70%;
+}
+
+
+footer a {
+    color: #999;
+    text-decoration: none;
+    transition: .25s;
+}
+
+footer .social {
+    margin-top: 32px;
+}
+
+footer .social a{
+    font-size: 1.8rem;
+    margin-right: 20px;
+} 
+
+footer .copyright  {
+    border-top: 1px solid #999;
+    align-items: center;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+footer .copyright span {
+    font-size: 13.28px;
+}
+
+footer .copyright h5 {
+    margin-left: 10px;
+}
+
+footer .copyright h5:hover a {
+    color: #fff;
+}
+
+/*phone*/
+@media only screen and (max-width: 46.1875em) {
+    header {
+        top: 0 !important;
+    }
+
+    .slides__title p {
+        font-size: 50%;
+        padding: 0;
+    }
+
+    .slides__title p:last-child {
+        padding-top: 0;
+    }
+
+    .reason__item {
+        flex-direction: column;
+    }
+
+    .reason__item .box {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .reason__item .box:first-child {
+        margin: 0;
+    }
+    
+    .car__brand__box {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .car__brand__box .title-field {
+        padding-top: 30px;
+    }
+
+    .car__brand__box > section {
+        width: 100% !important;
+    }
+
+    .logo__brands {
+        flex-wrap: wrap;
+        margin: 20px 0 40px;
+        border: none;
+    }
+
+    .logo__brands .item {
+        border-right: 0;
+    }
+
+    .service__box {
+        flex-wrap: wrap;
+    }
+    
+    .service__box .service__item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .news__box {
+        flex-wrap: wrap;
+    }
+
+    .news__box section {
+        width: 100%;
+    }
+
+    .sub_news {
+        flex-wrap: wrap;
+    }
+
+    .sub_news .news__item{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .sub_news .news__item:first-child {
+        margin-top: 26px;
+    }
+
+    .sub_news .news__item h5 {
+        font-size: 1rem;
+    }
+}
+
+ /*tablet*/
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    header {
+        top: 0 !important;
+    }
+
+    .slides__title p {
+        font-size: 75%;
+    }
+
+    .slides__title p:last-child {
+        padding-top: 0;
+    }
+
+    .reason__item {
+        flex-direction: column;
+    }
+
+    .reason__item .box {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .reason__item .box:first-child {
+        margin: 0;
+    }
+    
+    .car__brand__box {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .car__brand__box .title-field {
+        padding-top: 30px;
+    }
+
+    .car__brand__box > section {
+        width: 100% !important;
+    }
+
+    .logo__brands {
+        flex-wrap: wrap;
+        margin: 20px 0 40px;
+        border: none;
+    }
+
+    .logo__brands .item {
+        border-right: 0;
+    }
+
+    .service__box {
+        flex-wrap: wrap;
+    }
+    
+    .service__box .service__item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .news__box {
+        flex-wrap: wrap;
+    }
+
+    .news__box section {
+        width: 100%;
+    }
+
+    .sub_news {
+        flex-wrap: wrap;
+    }
+
+    .sub_news .news__item{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .sub_news .news__item:first-child {
+        margin-top: 26px;
+    }
+    
+    .sub_news .news__item h5 {
+        font-size: 1rem;
+    }
+}

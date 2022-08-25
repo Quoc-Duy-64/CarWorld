@@ -1,0 +1,168 @@
+.contact__title.title-field {
+    padding: 60px 0 20px;
+}
+
+.my__info.next h3,.time_open h3{
+    font-size: 2rem;
+    text-align: center;
+    color: #444;
+}
+
+div.map{
+    position: relative;
+    width: 100%;
+}
+
+.info_contact{
+    justify-content: center;
+}
+
+.time_open table tr th{
+    width: 170px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.time_open table tr:first-child th{
+    text-align: center;
+}
+
+.first_row{
+    background-color: #f2f2f2;
+}
+
+.time_open h3{
+    padding-bottom: 8px;
+}
+
+section.info_time{
+    margin-top: 40px;
+    padding: 0px 60px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+section.info_time div{
+    width: 50%;
+} 
+
+.info_contact{
+    margin: 60px 0;
+    justify-content: space-around;
+}
+
+.map div > h2{
+    padding: 14px 0 14px 30px;
+    background-color: grey;
+    color: white;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.contact_to_buy_1 {
+    justify-content: center;
+    
+}
+
+fieldset {
+    width: 70%;
+    border: 1px solid #555;
+    border-radius: 8px;
+    color: #555;
+}
+
+legend {
+    margin-left: 20px;
+    padding: 0 10px;
+    font-size: 1.2rem;
+}
+
+.title_contact_box {
+    text-align: center;
+    padding: 16px 0;
+}
+
+.contact_box >div{
+    width: 100%;
+    padding: 0 20px;
+}
+
+.contact_box input {
+    border-radius: 4px;
+    border: 1px solid #555;
+    width: 100%;
+    padding:  10px;
+    outline: none
+}
+
+.contact_box input:focus, .contact_box .user-text:focus {
+    border-color: #3fd78e;
+}
+
+.contact_box .user-text {
+    margin: 10px 20px 20px;
+    width: 95%;
+    border-radius: 4px;
+}
+
+.first-input {
+    margin-top: 10px;
+}
+
+.first-input input:first-child{
+    margin-right: 10px;
+}
+
+.last-input input:first-child{
+    margin-right: 10px;
+}
+
+.mgb{
+    margin-bottom: 16px;
+}                                  
+
+.user-text {
+    outline: none;
+    padding: 10px 0 0 10px;
+}
+
+.submit-btn {
+    justify-content:center;
+    margin-top: 20px;
+}
+
+.submit-btn button {
+    width: 260px;
+    padding: 10px 0;
+    cursor: pointer;
+    background-color: #e46f6f;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size:1.1rem;
+    transition: .25s;
+    margin-bottom: 60px;
+}
+
+.submit-btn button:hover {
+    background-color: var(--main-color);
+}
+
+
+/*phone*/
+@media only screen and (max-width: 46.1875em) {
+    fieldset {
+        width: 100%;
+    } 
+
+    .contact_box .user-text {
+        width: 85%;
+    }
+}
+
+ /*tablet*/
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .contact_box .user-text {
+        width: 92%;
+    }
+}
